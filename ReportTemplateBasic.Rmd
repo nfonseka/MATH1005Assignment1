@@ -1,0 +1,88 @@
+---
+title: "Reproducible Report Template - Basic"
+author: "Student/s SID"
+subtitle: "Project X"
+date: "University of Sydney | Unit of Study | MONTH YEAR"
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    self_contained: yes
+    theme: flatly
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    code_folding: hide
+---
+
+<br>
+
+# Executive Summary
+- The aim of this report is to ...
+- The main discoveries are ...
+
+<br>
+
+# Full Report
+
+## Initial Data Analysis (IDA)
+
+RStudio has many data sets already loaded in. The example below uses preloaded data direct from RStudio example dataset: mtcars.
+
+Read about the [mtcars data set](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html).
+
+In the rmd file, you will see how you can load your own dataset from either 1) an online source using a URL or 2) a local file on your own computer.
+
+```{r}
+
+# LOAD DATA v1 - uncomment the link below to: load data direct from html
+#cars = read.csv("dataset URL")
+
+# LOAD DATA v2 - uncomment the link below to: load data from local file
+#cars = read.csv("dataset file location")
+
+# Quick look at top 5 rows of data
+head(mtcars)
+
+## Size of data
+dim(mtcars)
+
+## R's classification of data
+class(mtcars)
+
+## R's classification of variables
+str(mtcars)
+#sapply(mtcars, class)
+```
+
+Summary:
+
+- The data came from ...
+- The data is/is not valid because ...
+- Possible issues include ...
+- Each row represents ...
+- Each column represents ...
+
+<br>
+
+## Research Question 1
+
+Insert text and analysis. 
+
+Summary: 
+
+<br>
+
+## Research Question 2
+
+Insert text and analysis. 
+
+Summary: 
+
+<br>
+
+# References (if needed)
+
+Style: APA 
+
+<br>
