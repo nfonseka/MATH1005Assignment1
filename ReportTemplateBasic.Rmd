@@ -1,6 +1,6 @@
 ---
 title: "MATH1005 Project 1 - Group 55"
-author: "Student/s SID"
+author: "500557358; "
 subtitle: "Project X"
 date: "University of Sydney | Unit of Study | MONTH YEAR"
 output:
