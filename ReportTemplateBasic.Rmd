@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Report Template - Basic"
+title: "MATH1005 Project 1 - Group 55"
 author: "Student/s SID"
 subtitle: "Project X"
 date: "University of Sydney | Unit of Study | MONTH YEAR"
