@@ -26,42 +26,122 @@ output:
 # Full Report
 
 ## Initial Data Analysis (IDA)
+### Data Quality - Origins of Data
 
-RStudio has many data sets already loaded in. The example below uses preloaded data direct from RStudio example dataset: mtcars.
+The data set was found in a Federal Bureau of Investigation website from the criminal justice information services division. The data set contains the number of crimes committed (per year) and the rate (per 100 000 inhabitants) of different types of crime such as violent crime and robbery from the years 1997 to 2016 in the United States of America. 
 
-Read about the [mtcars data set](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html).
+This source is reliable as it written/collected by a trustworthy government source. The results are valid as the Federal Bureau of Investigation is a government organization and thus is trustworthy and would collect accurate information. The information would be also be checked and reviewed by others before being published on their website.
 
-In the rmd file, you will see how you can load your own dataset from either 1) an online source using a URL or 2) a local file on your own computer.
+There are also limitations to this data set, this includes the missing data in the "rape" and "rape rate" variable. So that variable will not be not used in the analysis. However, missing data can lead to bias of the variables and results in a decrease in statistical power (Kang, 2013). 
+Another limitation includes how the data set doesn't include crime that hasn't been reported to the police or FBI so thus the numbers in the data could be lower than the actual crimes committed in the U.S. This could lead to inaccurate data collected and therefore the conclusions or trends after analysis will be inaccurate. A research paper notes that crime statistics doesn't show the reality of crime, and can lead to an incorrect conclusion (Altbeker, 2016). Data also doesn't account for all types of crime including drug, cyber, financial crimes etc. 
 
+## Complexity of Data
 ```{r}
 
-# LOAD DATA v1 - uncomment the link below to: load data direct from html
-#cars = read.csv("dataset URL")
+crime = read.csv("crime.csv")
 
-# LOAD DATA v2 - uncomment the link below to: load data from local file
-#cars = read.csv("dataset file location")
+```
+```{r}
+#quick look at top 5 rows of data
 
-# Quick look at top 5 rows of data
-head(mtcars)
+head(crime)
 
-## Size of data
-dim(mtcars)
+```
+```{r}
 
-## R's classification of data
-class(mtcars)
+##Size of data 
+
+dim(crime)
+
+```
+```{r}
+
+## R's classification of data 
+
+class(crime)
+
+```
+```{r}
 
 ## R's classification of variables
-str(mtcars)
-#sapply(mtcars, class)
-```
 
+str(crime)
+
+```
+```{r}
+
+## Reclassification of Variables to numerical
+
+crime$Year=as.numeric(crime$Year)
+
+```
+Change Year variable from integer to numeric And change chr values to numeric. 
+First have to get rid of the commas and spaces, then change them to numerical variables.
+
+```{r}
+## Remove commas and whitespaces
+crime$Pop = gsub(",","",crime$Pop)
+crime$Pop = gsub(" ","",crime$Pop)
+crime$Pop = as.numeric(crime$Pop)
+
+crime$ViolentCrime = gsub(",","",crime$ViolentCrime)
+crime$ViolentCrime = gsub(" ","",crime$ViolentCrime)
+crime$ViolentCrime = as.numeric(crime$ViolentCrime)
+
+crime$MMS = gsub(",","",crime$MMS)
+crime$MMS = gsub(" ","",crime$MMS)
+crime$MMS = as.numeric(crime$MMS)
+
+crime$Rape = gsub(",","",crime$Rape)
+crime$Rape = gsub(" ","",crime$Rape)
+crime$Rape = as.numeric(crime$Rape)
+
+crime$Robbery = gsub(",","",crime$Robbery)
+crime$Robbery = gsub(" ","",crime$Robbery)
+crime$Robbery = as.numeric(crime$Robbery)
+
+crime$AggAssault = gsub(",","",crime$AggAssault)
+crime$AggAssault = gsub(" ","",crime$AggAssault)
+crime$AggAssault = as.numeric(crime$AggAssault)
+
+crime$PropCrime = gsub(",","",crime$PropCrime)
+crime$PropCrime = gsub(" ","",crime$PropCrime)
+crime$PropCrime = as.numeric(crime$PropCrime)
+
+crime$Burg = gsub(",","",crime$Burg)
+crime$Burg = gsub(" ","",crime$Burg)
+crime$Burg = as.numeric(crime$Burg)
+
+crime$LarcTheft = gsub(",","",crime$LarcTheft)
+crime$LarcTheft = gsub(" ","",crime$LarcTheft)
+crime$LarcTheft = as.numeric(crime$LarcTheft)
+
+crime$LarcTheftRate = gsub(",","",crime$LarcTheftRate)
+crime$LarcTheftRate = gsub(" ","",crime$LarcTheftRate)
+crime$LarcTheftRate = as.numeric(crime$LarcTheftRate)
+
+crime$VehicleTheftRate = gsub(",","",crime$VehicleTheftRate)
+crime$VehicleTheftRate = gsub(" ","",crime$VehicleTheftRate)
+crime$VehicleTheftRate = as.numeric(crime$VehicleTheftRate)
+
+crime$VehicleTheft = gsub(",","",crime$VehicleTheft)
+crime$VehicleTheft = gsub(" ","",crime$VehicleTheft)
+crime$VehicleTheft = as.numeric(crime$VehicleTheft)
+```
+```{r}
+
+## R's classification of variables after variable change
+
+str(crime)
+
+```
 Summary:
 
-- The data came from ...
-- The data is/is not valid because ...
-- Possible issues include ...
-- Each row represents ...
-- Each column represents ...
+- The data came from the Federal Bureau of Investigation, criminal justice information services division website.
+- The data is valid because the FBI is an official government organization. 
+- Possible issues include the missing data for rape and the data only having reported crimes.
+- Each row represents the amount or rate (per 100 000) of a type of crime from the years 1997 to 2016.
+- Each column represents the type (20 types) of crime committed, eg theft, rape etc.
 
 <br>
 
