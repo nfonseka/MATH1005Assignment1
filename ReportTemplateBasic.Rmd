@@ -25,6 +25,8 @@ output:
 
 # Full Report
 
+## Domain Knowledge
+
 ## Initial Data Analysis (IDA)
 ### Data Quality - Origins of Data
 
@@ -164,5 +166,10 @@ Summary:
 # References (if needed)
 
 Style: APA 
+
+Altbeker, A. (2016). THE DANGERS OF DATA: Recognising the limitations of crime statistics. South African Crime Quarterly, 14. https://doi.org/10.17159/2413-3108/2005/v0i14a1004
+  
+  Kang, H., & Kang, H. (2013). The prevention and handling of the missing data. Korean Journal of Anesthesiology, 64(5), 402–406. https://doi.org/10.4097/kjae.2013.64.5.402
+
 
 <br>
