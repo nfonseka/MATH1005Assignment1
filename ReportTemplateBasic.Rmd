@@ -142,8 +142,6 @@ Summary:
 - The data came from the Federal Bureau of Investigation, criminal justice information services division website.
 - The data is valid because the FBI is an official government organization. 
 - Possible issues include the missing data for rape and the data only having reported crimes.
-- Each row represents the amount or rate (per 100 000) of a type of crime from the years 1997 to 2016.
-- Each column represents the type (20 types) of crime committed, eg theft, rape etc.
 
 <br>
 
