@@ -1,6 +1,6 @@
 ---
 title: "MATH1005 - Group 55"
-author: "500557358; 500480757 "
+author: "500557358; 500480757,500179286 "
 subtitle: "Project 1"
 date: "University of Sydney | Math1005 | 2020"
 output:
@@ -149,9 +149,54 @@ Summary:
 
 ## Research Question 1
 
+-Distribution of crime
+ 
+```{r}
+crime<-read.csv("crime.csv",header = TRUE);data
+VCRate=data$VCRate
+MMSRate=data$MMSRate
+RapeRate=data$RapeRate
+RobberyRate=data$RobberyRate
+AggAssaultRate=data$AggAssault.1
+BurgRate=data$BurgRate
+LarcTheftRate=data$LarcTheftRate
+VehicleTheftRate=data$VehicleTheftRate
+boxplot(VCRate,horizontal = T)
+#violent crime
+boxplot(MMSRate,horizontal = T)
+#MMS
+boxplot(RapeRate,horizontal = T)
+#Rape
+boxplot(RobberyRate,horizontal = T)
+#robbery
+boxplot(AggAssaultRate,horizontal = T)
+#agg assault
+boxplot(BurgRate,horizontal = T)
+#burg
+boxplot(VehicleTheftRate,horizontal = T)
+#vehicle thef
+```
+Summary: 
+-According to FBI data, There are several types of crimes, including violent crime, MMS crime, rape, robbery, Aggravated Assault, burg, theft and vehicle theft. The three crimes with the largest number of crimes are Larc Theft, burg and violent crimes. Among them, the number of people who committed theft is the largest. This may be because the crime of theft is not severe, and theft and burglary are more profitable. If it does not involve overly expensive items, the criminals will usually not stay in prison for too long. A large number of violent crimes may be due to the broad classification, covering a wide range of crimes, leading to more criminals. The two relatively few items are MMS crime and rape. For the total number of crimes, the lower number of rapes is because it is a felony in the United States. Serious consequences and longer sentences have resulted in fewer crimes. 
+-Looking at the data as a whole, from 1997 to 2016, the number of crimes showed a downward trend. Although not every year is less than the previous year, overall, the crime rate is declining. It can be seen from the box plot that although the crime rate is declining, the distribution of crime has not changed much. Comparing 1997 and 2016, burglary and theft are still the most common crimes, while MMS and rape are still the least common crimes. During the period 1997-2016, the distribution of crimes did not change significantly.
+
+
+<br>
+
+## Research Question 2
+
 Insert text and analysis. 
 
 Summary: 
+
+<br>
+
+# References (if needed)
+
+Style: APA 
+
+<br>
+
 
 <br>
 
