@@ -1,6 +1,6 @@
 ---
 title: "MATH1005 - Group 55"
-author: "500557358; 500480757,500179286 "
+author: "500557358; 500480757,500179286, 500242465 "
 subtitle: "Project 1"
 date: "University of Sydney | Math1005 | 2020"
 output:
@@ -216,6 +216,10 @@ Style: APA
 Altbeker, A. (2016). THE DANGERS OF DATA: Recognising the limitations of crime statistics. South African Crime Quarterly, 14. https://doi.org/10.17159/2413-3108/2005/v0i14a1004
   
   Kang, H., & Kang, H. (2013). The prevention and handling of the missing data. Korean Journal of Anesthesiology, 64(5), 402–406. https://doi.org/10.4097/kjae.2013.64.5.402
+  
+  Violence & Safety - Women in the States. (2020). Retrieved 1 October 2020, from https://statusofwomendata.org/explore-the-data/violence-safety/?gclid=CjwKCAjw2dD7BRASEiwAWCtCb0gu_aiiKMFmPWMcqWHDw0zZfs-JvLPnZM7kfMGLAR79FZf-kUMkKhoCU58QAvD_BwE
 
+  5 facts about crime in the U.S. (2020). Retrieved 1 October 2020, from https://www.pewresearch.org/fact-tank/2019/10/17/facts-about-crime-in-the-u-s/
+  
 
 <br>
