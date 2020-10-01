@@ -27,6 +27,9 @@ output:
 
 ## Domain Knowledge
 
+For the data, several types of crimes in the United States of America have been looked into like rape, robbery, burg, theft, vehicle theft, aggravated assault, MMS crime, violent crimes etc. etc. The most common type of theft as in any other country was theft and burglary. The most common reason for committing crimes is either greed or hatred. Criminals often commit crimes to make money or seek revenge. Crimes were reported in several ways some of which are, police reports, police cases, witnesses calling the police from the place of incident. Most crimes, however, are not reported to the police and most reported crimes are not solved. Violent crimes were at its peak in the early 90’s in the United States of America and the most common age group that committed crime was 25-40. After research, it was found that the most violent or dangerous city to live in the USA, was Detroit where crime rate was 20 crimes per 1000 residents. This was closely followed by Memphis where the crime rate was 19.5 crimes for the same number of residents. In 2018, the US murder rate was 5.0 per 100,000, for a total of 15,498 murders. The city with the highest homicide rate was East St. Louis, Illinois. The USA also has one of the highest rates of under-aged crimes in the world. That being said, violent crimes in the U.S has fallen sharply over the past 25 years. Following this trend, property crime has also decreased significantly. However, public perception about crimes in the U.S. often does not align with the data, Americans believe that crime is up nationally even when data shows that it is down.
+
+
 ## Initial Data Analysis (IDA)
 ### Data Quality - Origins of Data
 
