@@ -113,6 +113,10 @@ crime$PropCrime = gsub(",","",crime$PropCrime)
 crime$PropCrime = gsub(" ","",crime$PropCrime)
 crime$PropCrime = as.numeric(crime$PropCrime)
 
+crime$PropCrimeRate = gsub(",","",crime$PropCrimeRate)
+crime$PropCrimeRate = gsub(" ","",crime$PropCrimeRate)
+crime$PropCrimeRate = as.numeric(crime$PropCrimeRate)
+
 crime$Burg = gsub(",","",crime$Burg)
 crime$Burg = gsub(" ","",crime$Burg)
 crime$Burg = as.numeric(crime$Burg)
