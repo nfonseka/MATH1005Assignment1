@@ -18,9 +18,7 @@ output:
 <br>
 
 # Executive Summary
-- The aim of this report is to ...
-- The main discoveries are ...
-
+The aim of the report is to find the change in distribution of crime over the years of 1997-2016 and after doing statistical analysis it was found that the distribution of crime has not changed much over the years. Another aim of this report was to analyze the overall trend in violent crimes across the United States of America while analyzing the whole US crime trends. This was essential to make sure that the legislations and initiatives by the US government are as a whole aiming to decrease the rate of violent crime. To investigate this, a linear regression model was used which showed a decrease in the overall trend of violent crimes. However, the model can be further improved as fluctuations in the rate of decrease in the crime rate were also observed. While doing these calculations, research and analysis was done on several types of crimes that are committed in the USA and the way they were reported. 
 <br>
 
 # Full Report
