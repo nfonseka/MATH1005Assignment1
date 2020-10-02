@@ -228,7 +228,7 @@ A Downward trend with a slope of -11 is clearly seen although the residuals appe
 
 <br>
 
-# References (if needed)
+# References
 
 Style: APA 
 
