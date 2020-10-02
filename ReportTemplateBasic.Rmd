@@ -190,7 +190,7 @@ Summary:
 
 ## Research Question 2: Trend in Violent Crime
 
-In the analysis of US crime, it was deemed important to also analyse the overall trend in violent crime across the country. This is important to ensure that legislation and initiatives by the US government are overall aiming to decrease the rate of violent crimes. The violent crime rate was chosen to be investigaed rather than the total frequency of violent crime as the population of the US also increased over time.
+In the analysis of US crime, it was deemed important to also analyse the overall trend in violent crime across the country. This is important to ensure that legislation and initiatives by the US government are overall aiming to decrease the rate of violent crimes. The violent crime rate was chosen to be investigated rather than the total frequency of violent crime as the population of the US also increased over time.
 
 ```{r}
 crime = read.csv("crime.csv", header = TRUE)
@@ -215,7 +215,7 @@ plot(predict(model), residuals(model), xlab="Predicted Y", ylab="Residuals")
 ```
 
 #### Homoscedasticity
-To investigate homoscedasticity, VCRate less than an arbitraty 500 was selected.
+To investigate homoscedasticity, VCRate less than an arbitrary 500 was selected.
 ```{r}
 
 data2 = crime[crime$VCRate<500,]
