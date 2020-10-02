@@ -225,7 +225,7 @@ plot(model2$residuals)
 abline(h=0, col = "red")
 ```
 ### Summary:
-While a downward trend with a slope of -11 is clearly seen although the residuals appear to have a trend fluctuating around the model. This indicates that the rate of the decrease in Violent Crime rate is not steady but fluctuating. While a linear model was adopted to investigate the general trend crime, a linear model is overall not appropriate for the data as there is a trend between residuals and predicted Y. To improve the model, a model with an oscillating part such as a sinusoidal model or a quartic,quintic or a higher order polynomial model should be adopted.
+A Downward trend with a slope of -11 is clearly seen although the residuals appear to have a trend fluctuating around the model. This indicates that the rate of the decrease in Violent Crime rate is not steady but fluctuating. While a linear model was adopted to investigate the general trend crime, a linear model is overall not appropriate for the data as there is a trend between residuals and predicted Y. To improve the model, a model with an oscillating part such as a sinusoidal model or a quartic,quintic or a higher order polynomial model should be adopted.
 
 <br>
 
