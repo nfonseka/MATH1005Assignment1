@@ -190,7 +190,7 @@ Summary:
 
 ## Research Question 2: Trend in Violent Crime
 
-In the analysis of US crime, it was deemed important to also analyse the overall trend in violent crime across the country. This is important to ensure that legislation and initiatives by the US government are overall aiming to decrease the rate of violent crimes. The violent crime rate was chosen to be investigated rather than the total frequency of violent crime as the population of the US also increased over time.
+Research question 2 aims to investigate the overall trend in crime in the US to determine whether initiatives by the US government are having a positive or negative effect in decreasing the crime rate. The violent crime rate was chosen to be investigated rather than the total frequency of violent crime as the population of the US also increased over time.
 
 ```{r}
 crime = read.csv("crime.csv", header = TRUE)
