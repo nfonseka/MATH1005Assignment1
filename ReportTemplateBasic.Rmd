@@ -150,9 +150,7 @@ Summary:
 
 <br>
 
-## Research Question 1
-
--Distribution of crime
+## Research Question 1: Distribution of crime
  
 ```{r}
 crime<-read.csv("crime.csv",header = TRUE)
@@ -164,20 +162,20 @@ AggAssaultRate=crime$AggAssault.1
 BurgRate=crime$BurgRate
 LarcTheftRate=crime$LarcTheftRate
 VehicleTheftRate=crime$VehicleTheftRate
-boxplot(VCRate,horizontal = T)
+boxplot(VCRate,horizontal = T, main="Violent Crime", xlab="Rate")
 #violent crime
-boxplot(MMSRate,horizontal = T)
+boxplot(MMSRate,horizontal = T, main="Murder and Manslaugher", xlab="Rate")
 #MMS
-boxplot(RapeRate,horizontal = T)
+boxplot(RapeRate,horizontal = T, main="Rape", xlab="Rate")
 #Rape
-boxplot(RobberyRate,horizontal = T)
+boxplot(RobberyRate,horizontal = T, main="Robbery", xlab="Rate")
 #robbery
-boxplot(AggAssaultRate,horizontal = T)
+boxplot(AggAssaultRate,horizontal = T, main="Aggrevated Assault", xlab="Rate")
 #agg assault
-boxplot(BurgRate,horizontal = T)
+boxplot(BurgRate,horizontal = T, main="Burglary", xlab="Rate")
 #burg
-boxplot(VehicleTheftRate,horizontal = T)
-#vehicle thef
+boxplot(VehicleTheftRate,horizontal = T, main="Vehicle Theft", xlab="Rate")
+#vehicle theft
 ```
 Summary: 
 -According to FBI data, There are several types of crimes, including violent crime, MMS crime, rape, robbery, Aggravated Assault, burg, theft and vehicle theft. The three crimes with the largest number of crimes are Larc Theft, burg and violent crimes. Among them, the number of people who committed theft is the largest. This may be because the crime of theft is not severe, and theft and burglary are more profitable. If it does not involve overly expensive items, the criminals will usually not stay in prison for too long. A large number of violent crimes may be due to the broad classification, covering a wide range of crimes, leading to more criminals. The two relatively few items are MMS crime and rape. For the total number of crimes, the lower number of rapes is because it is a felony in the United States. Serious consequences and longer sentences have resulted in fewer crimes. 
