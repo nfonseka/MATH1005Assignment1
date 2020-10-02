@@ -157,7 +157,7 @@ Summary:
 -Distribution of crime
  
 ```{r}
-crime<-read.csv("crime.csv",header = TRUE);data
+crime<-read.csv("crime.csv",header = TRUE)
 VCRate=crime$VCRate
 MMSRate=crime$MMSRate
 RapeRate=crime$RapeRate
@@ -165,7 +165,7 @@ RobberyRate=crime$RobberyRate
 AggAssaultRate=crime$AggAssault.1
 BurgRate=crime$BurgRate
 LarcTheftRate=crime$LarcTheftRate
-VehicleTheftRate=crime$VehicleTheftRat
+VehicleTheftRate=crime$VehicleTheftRate
 boxplot(VCRate,horizontal = T)
 #violent crime
 boxplot(MMSRate,horizontal = T)
