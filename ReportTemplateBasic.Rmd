@@ -188,11 +188,43 @@ Summary:
 
 <br>
 
-## Research Question 2
+## Research Question 2: Trend in Violent Crime
 
-Insert text and analysis. 
+In the analysis of US crime, it was deemed important to also analyse the overall trend in violent crime across the country. This is important to ensure that legislation and initiatives by the US government are overall aiming to decrease the rate of violent crimes. The violent crime rate was chosen to be investigaed rather than the total frequency of violent crime as the population of the US also increased over time.
 
-Summary: 
+```{r}
+crime = read.csv("crime.csv", header = TRUE)
+VCRate = crime$VCRate
+Time = crime$Year
+
+plot(Time, VCRate, xlab = "Year", ylab = "Violent Crime per 100000 individuals", main = "Violent Crime Rate over Time")
+
+model = lm(VCRate ~ Time)
+summary(model)
+abline(model)
+```
+The model shows an overall downward trend in the rate of crime, the regression model shows that every year, the violent crime rate decreases by 11 per 100000 individuals. The validity of the model will be further investigated.
+
+### Validity of the regression model
+```{r}
+# Residuals
+plot(model$residuals, main = "Residuals Plot", ylab = "Residuals")
+abline(h=0, col="red")
+# Zero conditional mean
+plot(predict(model), residuals(model), xlab="Predicted Y", ylab="Residuals")
+```
+
+#### Homoscedasticity
+To investigate homoscedasticity, VCRate less than an arbitraty 500 was selected.
+```{r}
+
+data2 = crime[crime$VCRate<500,]
+model2 = lm(data2$VCRate ~ data2$Year)
+plot(model2$residuals)
+abline(h=0, col = "red")
+```
+### Summary:
+While a downward trend of -11 is clearly seen, the residuals appear to have a trend fluctuating around the model. This indicates that the rate of the decrease in Violent Crime rate is not steady but fluctuating. While a linear model was adopted to investigate the general trend crime, a linear model is overall not appropriate for the data as there is a trend between residuals and predicted Y. To improve the model, a model with an oscillating part such as a sinusoidal model should be adopted or a quartic,quintic or a higher order polynomial model should be adopted.
 
 <br>
 
