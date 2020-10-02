@@ -158,14 +158,14 @@ Summary:
  
 ```{r}
 crime<-read.csv("crime.csv",header = TRUE);data
-VCRate=data$VCRate
-MMSRate=data$MMSRate
-RapeRate=data$RapeRate
-RobberyRate=data$RobberyRate
-AggAssaultRate=data$AggAssault.1
-BurgRate=data$BurgRate
-LarcTheftRate=data$LarcTheftRate
-VehicleTheftRate=data$VehicleTheftRate
+VCRate=crime$VCRate
+MMSRate=crime$MMSRate
+RapeRate=crime$RapeRate
+RobberyRate=crime$RobberyRate
+AggAssaultRate=crime$AggAssault.1
+BurgRate=crime$BurgRate
+LarcTheftRate=crime$LarcTheftRate
+VehicleTheftRate=crime$VehicleTheftRat
 boxplot(VCRate,horizontal = T)
 #violent crime
 boxplot(MMSRate,horizontal = T)
