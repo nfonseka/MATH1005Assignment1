@@ -212,6 +212,7 @@ plot(model$residuals, main = "Residuals Plot", ylab = "Residuals")
 abline(h=0, col="red")
 # Zero conditional mean
 plot(predict(model), residuals(model), xlab="Predicted Y", ylab="Residuals")
+abline(h=0, col="red")
 ```
 
 #### Homoscedasticity
